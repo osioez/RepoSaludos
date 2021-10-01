@@ -2,7 +2,6 @@
 @model HolaWeb.App.Frontend.Pages.ListModel
 @{
 }
-
 <h1>Lisado de Saludos</h1>
 <table class="table">
     @foreach (var saludo in Model.ListaSaludos)
@@ -12,3 +11,80 @@
         </tr>
     }
 </table> 
+
+<nav class="navbar navbar-expand-lg  navbar-dark navbar-full bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Accidentes.App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Agente</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Ciudadano</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Administrador</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container" style="justify-content:center; margin: 30px; text-align: center;">
+    <h1>Bienvenidos al Sistema de Control de Accidentes de Transito.</h1>
+</div>
+
+<div class="container" style="margin: 40px;">
+  <div class="row align-items-start">
+    <div class="col">
+        <div class="card" style="width: 18rem; margin: 20px">
+            <img src="https://images.pexels.com/photos/7715244/pexels-photo-7715244.jpeg?cs=srgb&dl=pexels-kindel-media-7715244.jpg&fm=jpg" width:"400"; height:"300"; class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Agentes</h5>
+                <p class="card-text">Aqui se realiza las operaciones con las que interactia el Agente.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; margin: 20px">
+            <img src="https://images.pexels.com/photos/6555014/pexels-photo-6555014.jpeg?cs=srgb&dl=pexels-cottonbro-6555014.jpg&fm=jpg" width:"400"; height:"300"; class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Ciudadano</h5>
+                <p class="card-text">Aqui se realiza las operaciones con las que interactia el Ciudadano.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; margin: 20px">
+            <img src="https://images.pexels.com/photos/6172587/pexels-photo-6172587.jpeg?cs=srgb&dl=pexels-rodnae-productions-6172587.jpg&fm=jpg" width:"400"; height:"300"; class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Administrador</h5>
+                <p class="card-text">Aqui se realiza las operaciones con las que interactia el Administrador.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
