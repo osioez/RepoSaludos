@@ -2,17 +2,36 @@
 @model HolaWeb.App.Frontend.Pages.ListModel
 @{
 }
-<h1>Lisado de Saludos</h1>
+<h1>Listado de Saludos en varios Idiomas</h1>
 <table class="table">
-    @foreach (var saludo in Model.ListaSaludos)
+  <tr>
+    <th>Id</th>
+    <th>Saludos en Español</th>
+    <th>Saludos en Ingles</th>
+    <th>Saludos en Italiano</th>
+  </tr>
+    @foreach (var saludo in Model.Saludos)
     {
         <tr>
-            <td>@saludo</td>
+            <td>@saludo.Id</td>
+            <td>@saludo.EnEspañol</td>
+            <td>@saludo.EnIngles</td>
+            <td>@saludo.EnItaliano</td>
+            <td><a class="btn btn-primary" asp-page="./Detail" asp-route-saludoId="@saludo.Id">
+            <i class="fas fa-info-circle"></i>
+            Detalle</a></td>
         </tr>
     }
+
+    @* @foreach (var saludo in Model.ListaSaludos)
+    {
+      <tr>
+            <td>@saludo</td>
+        </tr>
+    } *@
 </table> 
 
-<nav class="navbar navbar-expand-lg  navbar-dark navbar-full bg-dark">
+@* <nav class="navbar navbar-expand-lg  navbar-dark navbar-full bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Accidentes.App</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +102,7 @@
         </div>
     </div>
   </div>
-</div>
+</div> *@
 
 
 
